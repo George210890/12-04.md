@@ -20,7 +20,7 @@ GROUP BY c.store_id
 HAVING COUNT(c.store_id) > 300;
 ```
 
-![1](https://github.com/joos-net/SQL_2/blob/main/1.png)
+![1](https://github.com/George210890/12-04.md/blob/main/Screenshot_1.png)
 
 ---
 
@@ -34,7 +34,7 @@ FROM film
 WHERE `length` > (SELECT AVG(`length`) from film) ;
 ```
 
-![2](https://github.com/joos-net/SQL_2/blob/main/2.png)
+![2](https://github.com/George210890/12-04.md/blob/main/Screenshot_2.png)
 
 ---
 
@@ -49,7 +49,7 @@ GROUP BY MONTH(payment_date)
 ORDER BY COUNT(payment_id)  DESC LIMIT 1 ;
 ```
 
-![3](https://github.com/joos-net/SQL_2/blob/main/3.png)
+![3](https://github.com/George210890/12-04.md/blob/main/Screenshot_3.png)
 
 ## Дополнительные задания (со звездочкой*)
 
@@ -70,7 +70,7 @@ JOIN staff s ON p.staff_id = s.staff_id
 GROUP BY p.staff_id;
 ```
 
-![4](https://github.com/joos-net/SQL_2/blob/main/4.png)
+![4](https://github.com/George210890/12-04.md/blob/main/Screenshot_4.png)
 
 ---
 
@@ -87,4 +87,4 @@ LEFT JOIN rental r ON i.inventory_id = r.inventory_id
 WHERE r.inventory_id IS NULL;
 ```
 
-![5](https://github.com/joos-net/SQL_2/blob/main/5.png)
+![5](https://github.com/George210890/12-04.md/blob/main/Screenshot_5.png)
